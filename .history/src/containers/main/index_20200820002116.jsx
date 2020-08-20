@@ -22,7 +22,7 @@ function Main(){
         <div>TTTTT
              <StyleMain>
                  <div className='mb-2'>
-                     A
+                     
                  </div>
              </StyleMain>
         </div>

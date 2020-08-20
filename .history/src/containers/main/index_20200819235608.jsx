@@ -18,14 +18,8 @@ function Main(){
     },[getDataCovid,country]
 )
     return(
-        
-        <div>TTTTT
-             <StyleMain>
-                 <div className='mb-2'>
-                     A
-                 </div>
-             </StyleMain>
-        </div>
+        <StyleMain/>
+        <div>TTTTT</div>
     )
 }
 

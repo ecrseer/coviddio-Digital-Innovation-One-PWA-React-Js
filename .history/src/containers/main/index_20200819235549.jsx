@@ -19,13 +19,7 @@ function Main(){
 )
     return(
         
-        <div>TTTTT
-             <StyleMain>
-                 <div className='mb-2'>
-                     A
-                 </div>
-             </StyleMain>
-        </div>
+        <div>TTTTT</div>
     )
 }
 

@@ -1,6 +1,6 @@
 import React,{memo, useCallback, useState, useEffect} from 'react';
-import Api from '../../api';
-import StyleMain from './style';
+import Api from '../../api'
+import StyleDoMain from 'style'
 
 function Main(){
     
@@ -18,14 +18,8 @@ function Main(){
     },[getDataCovid,country]
 )
     return(
-        
-        <div>TTTTT
-             <StyleMain>
-                 <div className='mb-2'>
-                     A
-                 </div>
-             </StyleMain>
-        </div>
+        <StyleDoMain/>
+        <div>TTTTT</div>
     )
 }
 
