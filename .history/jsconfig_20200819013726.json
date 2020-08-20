@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "baseUrl": "src",
+        "jsx": "react",
+        "typingOptions": {
+            "enableAutoDiscovery": true
+          },
+        "paths": {
+            "components:/*": [
+                "./components/*"
+            ],
+            "containers:/*": [
+                "./containers/*"
+            ],
+            "assets:/*": [
+                "./assets/*"
+            ],
+            "commons:/*": [
+                "./commons/*"
+            ],
+        }
+    }
+}
