@@ -1,7 +1,7 @@
 import React, {memo} from 'react';
 import PropTypes from 'prop-types';
 import {Grid,Skeleton} from '../../../components/index'
-
+import { getByDisplayValue } from '@testing-library/react';
 
 function Board ({data}){
     const {cases,todayDeaths,recovered

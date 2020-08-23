@@ -1,7 +1,7 @@
 import React,{memo, useCallback, useState, useEffect} from 'react';
 import Api from '../../api';
 import StyleMain from './style';
-import Bbo from './Components/Board';
+
 function Main(){
     
     const [data,setData] = useState({});
@@ -22,7 +22,7 @@ function Main(){
         <div>TTTTT
              <StyleMain>
                  <div className='mb-2'>
-                     <Bbo></Bbo>
+                     A
                  </div>
              </StyleMain>
         </div>

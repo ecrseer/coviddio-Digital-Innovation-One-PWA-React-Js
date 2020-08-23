@@ -1,7 +1,7 @@
 import React, {memo} from 'react';
 import PropTypes from 'prop-types';
 import {Grid,Skeleton} from '../../../components/index'
-
+import { getByDisplayValue } from '@testing-library/react';
 
 function Board ({data}){
     const {cases,todayDeaths,recovered
@@ -13,7 +13,7 @@ function Board ({data}){
         <div>
             <Grid container spacing={4}>
                 <Grid item xs={12} md={3}>
-                    <Card value={getValue(cases)}
+                    <Card value={getByDisplayValue(cases)}
                      label="total de casos" color="#5d78ff"/>
                 </Grid>
             </Grid>
