@@ -10,13 +10,11 @@ import {
 function Card ({value,label,color}){
   return (
     <CardUI>
-      <CardContentStyled color={color}>
+      <CardContentStyled>
         <ValueStyled>
-          {value}
+          
         </ValueStyled>
-        <Label>{label}</Label>
       </CardContentStyled>
     </CardUI>
   )
 }
-export default memo(Card);

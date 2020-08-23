@@ -19,4 +19,3 @@ function Card ({value,label,color}){
     </CardUI>
   )
 }
-export default memo(Card);
