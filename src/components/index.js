@@ -3,7 +3,7 @@ import Button from './Button';
 import {Card, CardContent} from './Card';
 import Grid from './Grid';
 import Typography from './Typography';
-import Skeleton from './Skeleton';
+import Skeleton2 from './Skeleton';
 import Select from './Select';
 import MenuItem from './MenuItem';
 
@@ -13,7 +13,7 @@ export{
     CardContent,
     Grid,
     Typography,
-    Skeleton,
+    Skeleton2,
     Select,
     MenuItem
 }

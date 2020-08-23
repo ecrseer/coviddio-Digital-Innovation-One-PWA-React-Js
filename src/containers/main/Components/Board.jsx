@@ -1,6 +1,6 @@
 import React, {memo} from 'react';
 import PropTypes from 'prop-types';
-import {Grid,Skeleton} from '../../../components'
+import {Grid,Skeleton2} from '../../../components'
 import Card from './Card';
 
 function Board ({data}){
@@ -9,7 +9,7 @@ function Board ({data}){
 
      
     const getValue = (value)=> value ? value :
-      <Skeleton variant="text" width={182} height={80}/>;
+      <Skeleton2 variant="text" width={182} height={80} props={0}/>;
     return (
         <div>
             <Grid container spacing={4}>
