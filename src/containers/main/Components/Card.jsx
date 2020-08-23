@@ -2,20 +2,21 @@ import React, {memo} from 'react';
 import PropTypes from 'prop-types';
 import {Card as CardUI} from '../../../components/';
 import {
-  Label,
-  CardContentStyled,
-  ValueStyled,
+  LabelEstilizado,
+  CardEstilizado,
+  CardEstilizadoWrapper,
+   ValorEstilizado,
 } from './style';
 
 function Card ({value,label,color}){
   return (
     <CardUI>
-      <CardContentStyled color={color}>
-        <ValueStyled>
+      <CardEstilizadoWrapper color={color}>
+        <ValorEstilizado>
           {value}
-        </ValueStyled>
-        <Label>{label}</Label>
-      </CardContentStyled>
+        </ValorEstilizado>
+        <LabelEstilizado>{label}</LabelEstilizado>
+      </CardEstilizadoWrapper>
     </CardUI>
   )
 }

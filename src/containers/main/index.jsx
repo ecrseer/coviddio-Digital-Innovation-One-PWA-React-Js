@@ -5,25 +5,27 @@ import Bbo from './Components/Board';
 function Main(){
     
     const [data,setData] = useState({});
-    const [country,setCountry] = useState('brazil')
+    const [country,setCountry] = useState('brazil');
 
     const getDataCovid = useCallback((country)=>
     Api.getCountry(country)
-    .then(data=> console.log(data))
+    .then(data=> setData(data)    
+    )
     );
 
     useEffect(()=>{
         getDataCovid(country)
+        
 
     },[getDataCovid,country]
 )
-    return(
-        
+    return(        
         <div>TTTTT
              <StyleMain>
                  <div className='mb-2'>
-                     {/* <Bbo></Bbo> */}
+                     
                  </div>
+                 <Bbo data={data}></Bbo>
              </StyleMain>
         </div>
     )
