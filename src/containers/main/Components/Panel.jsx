@@ -15,7 +15,7 @@ import {Button,Select,MenuItem,Card,Typography}
 
 
 
-   const algo = (country,data) =>
+   const renderPaises = (country,index) =>
    <MenuItem key={`country/${index}`}>
       <ItemEstilizado>
         <div >{country.label}</div>
@@ -23,21 +23,24 @@ import {Button,Select,MenuItem,Card,Typography}
       </ItemEstilizado>
    </MenuItem>;
 
-   render(
+   return(
      <Card>
        <CardEstilizado>
+       <div>
         <Typography variant="h6" component="span" color="primary">Covid19</Typography>
         <Typography variant="h6" component="span" color="primary">Painel Coronavirus</Typography>
         <Typography variant="h6" component="span" color="primary">Atualizado em: {updateAt}</Typography>
         <div className="mb-2">
           <Select onChange={onChange} value={country}>
-            {algo}
+            {COUNTRIES.map(renderPaises)}
           </Select>
         </div>
-
+       </div>
         
        </CardEstilizado>
      </Card>
    );
 
  }
+
+ export default memo(Panel);

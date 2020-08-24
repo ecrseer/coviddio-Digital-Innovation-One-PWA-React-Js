@@ -5,7 +5,7 @@ import {ch,br,ger,italy as italyPN,usa} from '../../assets';
 
   {
   label:'Italia',
-  value:italy,
+  value:'italy',
   flag:italyPN,
   },
   {
