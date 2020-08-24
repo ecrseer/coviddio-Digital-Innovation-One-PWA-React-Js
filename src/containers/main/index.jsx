@@ -2,6 +2,8 @@ import React,{memo, useCallback, useState, useEffect} from 'react';
 import Api from '../../api';
 import StyleMain from './style';
 import Bbo from './Components/Board';
+
+
 function Main(){
     
     const [data,setData] = useState({});
@@ -20,7 +22,7 @@ function Main(){
     },[getDataCovid,country]
 )
     return(        
-        <div>TTTTT
+        <div>
              <StyleMain>
                  <div className='mb-2'>
                      

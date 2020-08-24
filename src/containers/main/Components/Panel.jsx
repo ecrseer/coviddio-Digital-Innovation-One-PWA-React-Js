@@ -8,6 +8,19 @@ import {Button,Select,MenuItem}
 
  const navigadorTemCompar = navigator.share;
 
- function Panel({something}){
+ function Panel({onChange,updateAt}){
+  const {cases,todayDeaths,recovered
+    ,deaths,todayCases}= data;
+
+
+
+   const algo = 
+   <MenuItem>
+      <ItemEstilizado>
+
+      </ItemEstilizado>
+   </MenuItem>;
+
+   render()
 
  }

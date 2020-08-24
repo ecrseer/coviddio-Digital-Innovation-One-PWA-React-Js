@@ -11,7 +11,7 @@ function App() {
     <div className="App"> 
     <StylesProvider>
       <CssBaseline/>
-      <Bckg/>VDL
+      <Bckg/>
       <Main/>
 
      </StylesProvider>
