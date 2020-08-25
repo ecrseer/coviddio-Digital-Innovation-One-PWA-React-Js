@@ -1,8 +1,10 @@
+Projeto de uma Progressive Web Application desenvolvido numa video aula da Digital Innovation One, utilizando a tecnologia reactjs
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+Para iniciar o projeto:
 
 ### `npm start`
 
