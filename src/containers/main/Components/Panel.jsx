@@ -14,26 +14,39 @@ import {Button,Select,MenuItem,Card,Typography}
     ,deaths,todayCases}= data;
 
 
+    //lembrar de setar URL
+    const copyInfo = ()=>
+     navigator.
+    clipboard.writeText('https://google.com');
 
-    const shareInfo =
-    
-      navigator.writeToClipboard(
+    const copyButton =(
+    <div>
+      <Button variant="contained" color="primary" 
+         onClick={copyInfo}>
+          Copiar
+      </Button>
+    </div>);
+
+
+
+    const shareInfo =  ()=>{
+      navigator.share(
         {
-        url:'google.com',
+        url:'https://google.com',
         text:'Hey just saw',
-        title:'titulo'
+        title:`covid do pais ${country}`
 
         }
       )
+    }
     ;
-
-    const shareButton =
+    const shareButton =(
     <div>
       <Button variant="contained"  color="primary"
           onClick={shareInfo}>
-
+            Compartilhar
       </Button>
-    </div>;
+    </div>);
 
    const renderPaises = (country,index) =>
    <MenuItem key={`country-${index}`} value={country.value}>
@@ -56,7 +69,7 @@ import {Button,Select,MenuItem,Card,Typography}
           </Select>
         </div>
        </div>
-        
+        {navigator.share ? shareButton : copyButton}
        </CardEstilizado>
      </Card>
    );

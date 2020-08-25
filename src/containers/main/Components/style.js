@@ -27,4 +27,3 @@ export const ItemEstilizado = styled.div`
   min-width:150px;
 
 `;
-
