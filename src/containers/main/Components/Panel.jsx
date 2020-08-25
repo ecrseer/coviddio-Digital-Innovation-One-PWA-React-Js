@@ -17,7 +17,12 @@ import {Button,Select,MenuItem,Card,Typography}
     //lembrar de setar URL
     const copyInfo = ()=>
      navigator.
-    clipboard.writeText('https://google.com');
+      clipboard.writeText(`---------------------
+      Dados de ${updateAt}
+      do país ${country} :
+      Total de Casos:${cases}    
+      Para mais informações acesse:https://gabrieljustinocovidpwa.netlify.app/
+      -----------------------------`);
 
     const copyButton =(
     <div>
