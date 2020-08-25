@@ -37,8 +37,8 @@ import {Button,Select,MenuItem,Card,Typography}
     const shareInfo =  ()=>{
       navigator.share(
         {
-        url:'https://google.com',
-        text:'Hey just saw',
+        url:'Para mais informações acesse:https://gabrieljustinocovidpwa.netlify.app/',
+        text:`Total de Casos:${cases} `,
         title:`covid do pais ${country}`
 
         }
