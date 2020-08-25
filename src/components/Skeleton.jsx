@@ -3,7 +3,9 @@ import React,{memo} from 'react';
 
 function Skeleton2({props}){
   return(
-    <Skeleton variant="text" height={82} width={182}>
+    <Skeleton variant="rect"
+      animation="wave"
+     height="1%" width="80%">
       {props}
     </Skeleton>
   );

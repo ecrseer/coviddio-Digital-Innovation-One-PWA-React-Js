@@ -13,8 +13,8 @@ function Main(){
 
     const getDataCovid = useCallback((country)=>
     Api.getCountry(country)
-    .then(data=> /* console.log(data) &&  */ setData(data)    
-    )
+    .then(datas=> /* console.log(data) &&  */ setData(datas)    
+    ),[data,country]
     );
 
     const handleChange = ({target})=>{

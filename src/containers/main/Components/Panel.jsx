@@ -68,8 +68,9 @@ import {Button,Select,MenuItem,Card,Typography}
             {COUNTRIES.map(renderPaises)}
           </Select>
         </div>
-       </div>
         {navigator.share ? shareButton : copyButton}
+       </div>
+        
        </CardEstilizado>
      </Card>
    );
