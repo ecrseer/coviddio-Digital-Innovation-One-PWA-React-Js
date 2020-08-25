@@ -17,7 +17,7 @@ function Main(){
     )
     );
 
-    const handleChange = (target)=>{
+    const handleChange = ({target})=>{
         const country = target.value
         setCountry(country)
     }
@@ -26,7 +26,7 @@ function Main(){
         getDataCovid(country)
         
 
-    },[getDataCovid,country]
+    },[country]
 )
     return(        
         <div>
