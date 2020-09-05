@@ -30,6 +30,9 @@ const Fundo = createGlobalStyle`
   .mb-2{
       margin-bottom:16px;
   }
+  .mb-3{
+    margin-top:16px;
+}
   .pt-2{
       padding-top:16;
   }

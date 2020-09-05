@@ -88,7 +88,7 @@ const wpd = ()=> {
             {COUNTRIES.map(renderPaises)}
           </Select>
         </div>
-         a
+         
         {navigator.share ? shareButton : copyButton}
        </div>
         

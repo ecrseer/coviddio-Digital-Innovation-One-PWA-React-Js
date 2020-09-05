@@ -3,6 +3,7 @@ import Api from '../../api';
 import StyleMain from './style';
 import Bbo from './Components/Board';
 import Panel from './Components/Panel';
+import InfoBoard from './Components/InfoBoard';
 
 function Main(){
     
@@ -41,6 +42,7 @@ function Main(){
                      />
                  </div>
                  <Bbo data={data}></Bbo>
+                 <InfoBoard/>
              </StyleMain>
         </div>
     )
