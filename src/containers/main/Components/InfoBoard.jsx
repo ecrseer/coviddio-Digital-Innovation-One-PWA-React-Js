@@ -25,9 +25,13 @@ import {Button,Select,MenuItem,Card,Typography}
         <Typography variant="body2" component="span" color="primary">{text3}</Typography><br/><br/>
 
         <img src={aglo} alt="lupa covid" width="50%"></img><br/>
+
+        
       </div>
     </CardEstilizado>
+    
    </Card>
+   <Typography variant="caption" component="span" color="#345" width="2%">Gabriel Justino m. Couto</Typography><br/><br/>
    </div>
   );
 

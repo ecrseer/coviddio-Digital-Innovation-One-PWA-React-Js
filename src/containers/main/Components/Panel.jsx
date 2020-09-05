@@ -80,9 +80,9 @@ const wpd = ()=> {
      <Card>
        <CardEstilizado>
        <div>
-        <Typography variant="h5" component="span" color="primary">Covid19</Typography>
-        <Typography variant="h6" component="span" color="primary">Painel Coronavirus</Typography>
-        <Typography variant="body2" component="span" color="primary">Atualizado em: {updateAt}</Typography>
+        <Typography variant="h5" component="span" color="primary">Covid19 </Typography>
+        <Typography variant="h6" component="span" color="primary"> Painel Coronavirus</Typography><br/>
+        <Typography variant="body2" component="span" color="primary"> Atualizado em: {updateAt}</Typography>
         <div className="pt-2">
           <Select onChange={onChange} value={country}>
             {COUNTRIES.map(renderPaises)}
