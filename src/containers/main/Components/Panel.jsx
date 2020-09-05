@@ -15,14 +15,14 @@ import {Button,Select,MenuItem,Card,Typography}
 
 
     //lembrar de setar URL
-    const copyInfo = ()=>
+    const copyInfo = ()=>{
      navigator.
       clipboard.writeText(`---------------------
       Dados de ${updateAt}
       do país ${country} :
       Total de Casos:${cases}    
       Para mais informações acesse:https://gabrieljustinocovidpwa.netlify.app/
-      -----------------------------`);
+      -----------------------------`)};
 
     const copyButton =(
     <div>
@@ -45,6 +45,8 @@ import {Button,Select,MenuItem,Card,Typography}
       )
     }
     ;
+   
+
     const shareButton =(
     <div>
       <Button variant="contained"  color="primary"
@@ -52,6 +54,19 @@ import {Button,Select,MenuItem,Card,Typography}
             Compartilhar
       </Button>
     </div>);
+
+/* const wppInfo = 'https://api.whatsapp.com/send?phone=' + 21976609558 + '&text=%20' + 'message'
+;
+const wpd = ()=> {
+  navigator.vibrate()
+}
+  const wppButton =(
+    <div>
+      <Button variant="contained"  color="primary"
+          onClick={wppInfo}>
+            Whatsapp
+      </Button>
+    </div>); */
 
    const renderPaises = (country,index) =>
    <MenuItem key={`country-${index}`} value={country.value}>
@@ -73,6 +88,7 @@ import {Button,Select,MenuItem,Card,Typography}
             {COUNTRIES.map(renderPaises)}
           </Select>
         </div>
+         a
         {navigator.share ? shareButton : copyButton}
        </div>
         
