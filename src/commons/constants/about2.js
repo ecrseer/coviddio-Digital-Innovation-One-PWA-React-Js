@@ -3,4 +3,4 @@ const text2= "A transmissão do coronavírus costuma A disseminação do coronav
 const subtitle= "My Text goes  ";
 const title= "My Text   here";
 
-export default  text2;
+export default text2;
