@@ -21,7 +21,7 @@ import {Button,Select,MenuItem,Card,Typography}
       Dados de ${updateAt}
       do país ${country} :
       Total de Casos:${cases}    
-      Para mais informações acesse:https://gabrieljustinocovidpwa.netlify.app/
+      Para mais informações acesse:https://covid-info-br.netlify.app/
       -----------------------------`)};
 
     const copyButton =(
@@ -37,7 +37,7 @@ import {Button,Select,MenuItem,Card,Typography}
     const shareInfo =  ()=>{
       navigator.share(
         {
-        url:'Para mais informações acesse:https://gabrieljustinocovidpwa.netlify.app/',
+        url:'Para mais informações acesse:https://covid-info-br.netlify.app/',
         text:`Total de Casos:${cases} `,
         title:`covid do pais ${country}`
 
